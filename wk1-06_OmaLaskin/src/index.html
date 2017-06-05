@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Oh noes, more lemmings!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Laskin</h1>
+        </header>
+
+        <section>
+            <p>
+                <input type="text" id="eka" value="0" />
+                <input type="text" id="toka" value="0" />
+            </p>
+
+            <p>
+                <input type="button" value="+" onclick="plus();" />
+                <input type="button" value="-" onclick="miinus()" />
+                <input type="button" value="*" onclick="kerto();" />
+                <input type="button" value="/" onclick="jako()" />
+            </p>
+
+
+            <p>Laskimen antama vastaus: <span id="tulos"></span></p>
+        </section>
+
+        <script src="laskin.js"></script>
+    </body>
+</html>
