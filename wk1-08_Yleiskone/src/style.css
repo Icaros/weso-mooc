@@ -1,0 +1,91 @@
+body {
+  width: 50%;
+  margin: 50px auto;
+  background: rgb(233, 229, 217);
+  color: rgb(73, 69, 69);
+  font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+}
+
+header h1, h2 {
+  text-align: center;
+}
+
+header nav {
+  text-align: center;
+}
+
+
+header nav ul {
+  font-size: 1.2em;
+  height: 40px;
+  line-height: 30px;
+  list-style-type: none;
+  border-radius: 10px;
+  display: inline-block;
+  padding-right: 40px;
+  margin: 0 auto 2em auto;
+  background: rgb(73, 69, 69);
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  float: left;
+  color: rgb(233, 229, 217);
+  padding: 5px 1.7em;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  color: rgb(73, 69, 69);
+  background: rgb(233, 229, 217);
+}
+
+section {
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-left: 2px dotted rgb(0, 0, 0);
+  border-right: 2px dotted rgb(0, 0, 0);
+  border-radius: 15px;
+}
+
+section header h1 {
+  color: rgb(66, 126, 120);
+}
+
+section.hidden {
+  display: none;
+}
+
+article {
+  text-align: center;
+}
+
+input {
+  background: rgb(233, 229, 217);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#publications input {
+  width: 50px;
+  margin-right: 10px;
+  padding: 0 5px;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: rgb(73, 69, 69);
+}
+
+#diggingIt {
+  color: orange;
+  font-weight: bold;
+  text-decoration:none;
+}

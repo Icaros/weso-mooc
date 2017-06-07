@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yleiskone</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="init();">
+      <header>
+        <h1>Swiss Army Knife of Pointless Functions</h1>
+        <h2>...or, everything you really need to know to survive!</h2>
+
+        <nav>
+          <ul>
+            <li><a href="#" onclick="displayArticle(0); return false;"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="#" onclick="displayArticle(1); return false;"><i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i> Celcius - Fahrenheit</a></li>
+            <li><a href="#" onclick="displayArticle(2); return false;"><i class="fa fa-exchange" aria-hidden="true"></i> Feet - Meters</a></li>
+            <li><a href="#" onclick="displayArticle(3); return false;"><i class="fa fa-calculator" aria-hidden="true"></i> Publications Calculator</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section id="home"></section>
+      <!-- ### -->
+      <section class="hidden">
+        <header>
+          <h1>From Celcius to Fahrenheit and Back Again!</h1>
+        </header>
+        <article>
+          <h3>Type in temperature of your natural habitat:</h3>
+          <p><strong>>> Celsius to Fahrenheit >></strong></p>
+          <p><input id="celcius" onkeyup="convert('C');" placeholder="Celcius"> - <input id="fahrenheit" onkeyup="convert('F');" placeholder="Fahrenheit"></p>
+          <p><strong><< Fahrenheit to Celcius <<</strong></p>
+        </article>
+      </section>
+      <!-- ### -->
+      <section class="hidden">
+        <header>
+          <h1>Feets to Meters and All Over Again!</h1>
+        </header>
+        <article>
+          <h3>Type in desired measure:</h3>
+          <p><strong>>> Feet to Meters >></strong></p>
+          <p><input id="feet" onkeyup="measure('F');" placeholder="Feets ...not yours, sillybilly!"> - <input id="meters" onkeyup="measure('M');" placeholder="Meters"></p>
+          <p><strong><< Meters to Feet <<</strong></p>
+        </article>
+      </section>
+      <!-- ### -->
+      <section id="publications" class="hidden">
+        <header>
+          <h1>Publications Weight Calculator</h1>
+        </header>
+        <article>
+          <p><strong>Publications and their weight on annual University fundings can be devided to four categories. Publications on category zero has a weight of 1, category one weight of 1,5, category two weight of 3, and category three respectively weight of 3.</strong></p>
+          <p> Category 0: <input class="cat" name="zero" value='0' onkeyup="sum();"> Category 1: <input class="cat" name="one" value='0' onkeyup="sum();"> Categoty 2: <input class="cat" name="two" value='0' onkeyup="sum();"> Category 3: <input class="cat" name="three" value='0' onkeyup="sum();"></p>
+          <hr>
+          <p><strong>OVERALL WEIGHT</strong></P>
+          <h2 id="weightResult"></h2>
+        </article>
+      </section>
+      <!-- ### -->
+      <footer>
+        <br>
+        <hr>
+        <p><a id="diggingIt" href="#" onclick="diggingIt();">Thumbs Up</a>, if you're diggin' it!
+        <i class="fa fa-thumbs-up" aria-hidden="true"></i></p>
+
+        <p><strong><span id="thumbs"></span></strong></p>
+        <p>Powered by:</p>
+        <p><a href="http://fontawesome.io/" target="_blank">Font Awesome</a></p>
+      </footer>
+
+      <script src="code.js"></script>
+      <script src="https://use.fontawesome.com/0bc5a98061.js"></script>
+    </body>
+</html>
