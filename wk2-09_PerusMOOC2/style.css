@@ -1,0 +1,69 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    width: 60%;
+    background-color: rgb(233, 229, 217);
+}
+
+/* header */
+header h1 {
+    color: rgb(73, 69, 69);
+}
+
+header nav ul {
+    /* fontin koon ym määrittelyä.. */
+    font-size: 1.2em;
+    height: 40px;
+    line-height: 30px;
+    margin: 0 auto 2em auto;
+
+    /* taustaväriksi h1-elementin taustaväri */
+    background-color: rgb(73, 69, 69);
+
+    /* ei näytetä palloja */
+    list-style-type: none;
+
+    /* pyöreät kulmat */
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+
+header nav ul li {
+    float: left; 
+    display: inline; 
+}
+
+header nav ul li a {
+    color: rgb(233, 229, 217);
+    display: inline-block;
+    padding: 6px 1.5em;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(233, 229, 217);
+    color: rgb(73, 69, 69);
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+    
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(73, 69, 69);
+}
+
+/* sections */
+section h1 {
+    color: rgb(66, 126, 120);
+}
