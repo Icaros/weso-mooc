@@ -1,16 +1,16 @@
 function init() {
-  var calc = new Calc();
-  var button = document.getElementById('nappi');
+  var laskin = new Laskin();
+  var nappi = document.getElementById('nappi');
   nappi.addEventListener('click', function() {
-    laskin.add();
-    document.getElementById('laskuri').innerHTML = laskin.val;
+    laskin.etene();
+    document.getElementById('laskuri').innerHTML = laskin.laskuri;
   }, false);
 }
 
-function Calc() {
-  this.val = 0;
+function Laskin() {
+  this.laskuri = 0;
 }
 
-Calc.prototype.add = function () {
-  this.val++;
+Laskin.prototype.etene = function () {
+  this.laskuri++;
 };
