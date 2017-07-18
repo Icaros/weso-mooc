@@ -1,0 +1,1 @@
+[{"methodName":"genericTest","pointNames": ["11.1","11.2"], "status": "PASSED", "message": ""}]
