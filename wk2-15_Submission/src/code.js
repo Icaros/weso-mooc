@@ -19,14 +19,6 @@ submission.gui = (function() {
 
 })();
 
-// toteuta tähän submission.io -moduuli, jolla on näkyvä funktio send.
-// funktio send saa parametrina dataolion, joka tulee lähettää palvelimelle
-// JSON-muodossa
-
-// lähetä data osoitteeseen http://bad.herokuapp.com/app/in
-// voit tarkistaa menikö data perille osoitteessa http://bad.herokuapp.com/app/out
-
-// submission.io = ...
 submission.io = (function(){
 
   function send(data) {
